@@ -6,6 +6,9 @@ export interface CustomButtonProps {
     handleClick?:
     MouseEventHandler<HTMLButtonElement>;
     btnType: "button" | "submit" | "reset";
+    textStyles? : string;
+    rightIcon?: string;
+    isDisabled?: boolean;
 }
 
 export interface SearchManufacturerProps {
@@ -24,6 +27,14 @@ export interface CarProps {
     highway_mpg:number;
     make:string;
     model:number;
-    transmission:number;
+    transmission:string;
     year:number;
+}
+
+export interface FilterProps {
+    manufacturer: string;
+    model: string;
+    year: string;
+    fuel: string;
+    limit: number;
 }

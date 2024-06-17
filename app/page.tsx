@@ -1,13 +1,15 @@
 import Image from "next/image";
-import Hero from "@/components/Hero";
-import SearchBar from "@/components/SearchBar";
-import CustomFiler from "@/components/CustomFilter";
+import { CarCard, CustomFilter, Hero, SearchBar } from "@/components";
 import {fetchCars} from "@/utils";
-import CarCard from "@/components/CarCard";
+export default async function Home({searchParams}) {
 
-export default async function Home() {
-
-    const allCars = await fetchCars();
+    const allCars = await fetchCars({
+        manufacturer: searchParams.manufacturer || '',
+        model: searchParams.model || 2020,
+        year: searchParams.year || '',
+        fuel: searchParams.fuel || '',
+        limit: searchParams.limit || 10,
+    });
     const isDataEmpty = !Array.isArray(allCars) || allCars.length < 1 || !allCars;
     console.log(allCars);
 
