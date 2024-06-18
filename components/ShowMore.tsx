@@ -17,7 +17,7 @@ const ShowMore = ({ pageNumber, isNext, setLimit }: ShowMoreProps) => {
             {!isNext && (
                 <CustomButton
                     btnType="button"
-                    title="Show More"
+                    title="Daha Fazla Göster"
                     containerStyles="bg-primary-blue rounded-full text-white"
                     handleClick={handleNavigation}
                 />
