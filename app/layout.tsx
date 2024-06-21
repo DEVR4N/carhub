@@ -2,8 +2,8 @@ import "./globals.css";
 import {Navbar, Footer} from "@/components";
 
 export const metadata = {
-    title: "Car Hub",
-    description: "Discover the best cars in the world",
+    title: "Pink Rent a Car",
+    description: "Araç kiralama işlemlerinizi hızlı ve kolay bir şekilde yapın.",
 };
 
 export default function RootLayout({children,}: Readonly<{ children: React.ReactNode; }>) {
