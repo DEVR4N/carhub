@@ -72,27 +72,24 @@ export const fuels = [
 
 export const footerLinks = [
     {
-        title: "About",
+        title: "Hakkımızda",
         links: [
-            { title: "How it works", url: "/" },
-            { title: "Featured", url: "/" },
-            { title: "Partnership", url: "/" },
-            { title: "Bussiness Relation", url: "/" },
+            { title: "Hizmetlerimiz", url: "/" },
+            { title: "Neden Biz ?", url: "/" },
+            { title: "İş Birliklerimiz", url: "/" },
+            { title: "Şirket İlişkilerimiz", url: "/" },
         ],
     },
     {
-        title: "Company",
+        title: "Şirket",
         links: [
-            { title: "Events", url: "/" },
-            { title: "Blog", url: "/" },
-            { title: "Podcast", url: "/" },
-            { title: "Invite a friend", url: "/" },
+            { title: "Araçlarımız", url: "/" },
+            { title: "Prosödürlerimiz", url: "/" },
         ],
     },
     {
         title: "Socials",
         links: [
-            { title: "Discord", url: "/" },
             { title: "Instagram", url: "/" },
             { title: "Twitter", url: "/" },
             { title: "Facebook", url: "/" },

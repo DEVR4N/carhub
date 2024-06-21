@@ -28,7 +28,7 @@ const CarCard = ({car}: CarCardProps) => {
             <p className="flex mt-6 text-[32px] font-extrabold">
                 <span className="self-start text-[14px] font-semibold"> $ </span>
                 {carRent}
-                <span className="self-end text-[14px]"> /day </span>
+                <span className="self-end text-[14px]"> /günlük </span>
             </p>
 
             <div className="relative w-full h-40 my-3 object-contain">
@@ -58,7 +58,7 @@ const CarCard = ({car}: CarCardProps) => {
                 </div>
 
                 <div className="car-card__btn-container">
-                <CustomButton title="View More" containerStyles="w-full py-[16px] rounded-full bg-primary-blue"
+                <CustomButton title="Detaylar" containerStyles="w-full py-[16px] rounded-full bg-primary-blue"
                               textStyles="text-white text-[14px] leading-[17px] font-bold" rightIcon="arrow-right.svg"
                               handleClick={() => setIsOpen(true)} btnType="button" />
                 </div>
